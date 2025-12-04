@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio: Modal Centrado Rediseñado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Contenedor principal con diseño de cuadro -->
+        <div class="main-container">
+            <div class="container-content">
+                <div class="title-section">
+                    <i class="fas fa-layer-group icon-title"></i>
+                    <h1>Ejercicio: Modal Centrado</h1>
+                    <p class="subtitle">Interfaz de usuario interactiva</p>
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-card">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p>Haz clic en el botón para abrir el modal con información de los estudiantes.</p>
+                    </div>
+                    
+                    <div class="features">
+                        <h3>Características del modal:</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Diseño moderno y responsivo</li>
+                            <li><i class="fas fa-check-circle"></i> Se cierra al hacer clic fuera</li>
+                            <li><i class="fas fa-check-circle"></i> Se cierra con la tecla Escape</li>
+                            <li><i class="fas fa-check-circle"></i> Animaciones suaves</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="button-section">
+                    <button class="btn-open">
+                        <i class="fas fa-external-link-alt btn-icon"></i>
+                        Abrir Modal
+                    </button>
+                    <p class="button-hint">Puedes cerrar el modal con la tecla ESC</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>Ejercicio de modal &copy; 2025 - Diseño Personalizado</p>
+        </footer>
+    </div>
+
+    <!-- Modal overlay rediseñado -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <div class="modal-header-content">
+                    <i class="fas fa-user-graduate modal-icon"></i>
+                    <h2>Información de Estudiantes</h2>
+                </div>
+                <button class="btn-close" aria-label="Cerrar modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <div class="welcome-section">
+                    <p class="welcome-text">¡Bienvenido!</p>
+                    <p>A continuación se muestra la información de los estudiantes:</p>
+                </div>
+                
+                <div class="students-section">
+                    <h3><i class="fas fa-users"></i> Lista de Estudiantes</h3>
+                    
+                    <div class="student-card">
+                        <div class="student-avatar">
+                            <!-- Imagen de avatar para Yordy Tolavi -->
+                            <img src="imagen/Photosin.png" 
+                                 alt="Yordy Tolavi" class="avatar-img">
+                            <div class="avatar-status online"></div>
+                        </div>
+                        <div class="student-info">
+                            <h4>Yordy Tolavi</h4>
+                            <p><i class="fas fa-book"></i> Estudiante de Desarrollo Web</p>
+                            <p><i class="fas fa-envelope"></i> yordy.tolavi@ejemplo.com</p>
+                        </div>
+                        <span class="student-status active">Activo</span>
+                    </div>
+                    
+                    <div class="student-card">
+                        <div class="student-avatar">
+                            <!-- Imagen de avatar para Sevastian Salazar -->
+                            <img src="imagen/avatar.png" 
+                                 alt="Sevastian Salazar" class="avatar-img">
+                            <div class="avatar-status online"></div>
+                        </div>
+                        <div class="student-info">
+                            <h4>Sevastian Salazar</h4>
+                            <p><i class="fas fa-book"></i> Estudiante de Desarrollo Web</p>
+                            <p><i class="fas fa-envelope"></i> sevastian.salazar@ejemplo.com</p>
+                        </div>
+                        <span class="student-status active">Activo</span>
+                    </div>
+                </div>
+                
+                <div class="modal-instructions">
+                    <p><i class="fas fa-lightbulb"></i> <strong>Instrucciones:</strong> Puedes cerrar este modal haciendo clic en la X, fuera del modal o presionando la tecla Escape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
